@@ -70,7 +70,25 @@
     <h2>Project Summary</h2>
     <div class="summary">
         <p>
-            This project focuses on...
+            Rapid assessment and accurate forecasting of the battery state-
+of-health are essential for Lithium-ion battery usage and lifespan
+optimization. However, physics-based solvers are computationally
+intensive, and traditional surrogate models fail to handle time-series
+data and dynamically changing conditions. In this paper, the authors
+investigate a traditional deep learning model, LSTM, for its utility as
+a good surrogate model for the computationally expensive physics
+solvers, as well as the neural operators DeepONet and a state-space
+model modification called Mamba-DeepONet, for surrogate mod-
+eling of Single Particle Model simulations. Our results show that
+while DeepONet is not very good at capturing the battery dynamics,
+both LSTM and Mamba-DeepONet can function as effective sur-
+rogate models for batteries. We then conduct parameter inference
+using Tree-structured Parzen Estimator (TPE) algorithm and find
+that both LSTM and Mamba-DeepONet models show similar perfor-
+mance for parameter inference. Owing to the high parallelizability
+and the potential to train on much longer time-series sequences in
+the future, we make a case for why Mamba-DeepONet should be
+used for surrogate battery models in the future.
         </p>
     </div>
 </body>
