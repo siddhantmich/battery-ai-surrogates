@@ -89,6 +89,23 @@ mance for parameter inference. Owing to the high parallelizability
 and the potential to train on much longer time-series sequences in
 the future, we make a case for why Mamba-DeepONet should be
 used for surrogate battery models in the future.
+
+The results demonstrate that the proposed approaches, Mamba-
+DeepONet and LSTM, outperform the standard DeepONet in terms
+of prediction accuracy. Notably, in the case study, LSTM exhibited
+higher prediction accuracy than Mamba-DeepONet. However, the
+authors believe that Mamba-DeepONet may have significant advan-
+tages over LSTM for longer time series. This is due to its superior
+parallelization capabilities and its ability to capture long-range in-
+teractions in the time series, attributed to the incorporation of the
+Mamba framework. Using accurate surrogate models, the authors
+employed the tree-structured Parzen estimator algorithm for pa-
+rameter inference. The results indicate that the authors achieved
+reasonable prediction accuracy for the parameters. However, due
+to the nature of the formulation of the battery models, different
+parameter combinations can sometimes produce the same voltage
+dynamic response. This phenomenon may hinder achieving higher
+accuracy in parameter inference.
         </p>
     </div>
 </body>
